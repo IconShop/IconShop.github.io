@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="IconShop: Text-Guided Vector Icon Synthesis with Autoregressive Transformers">
+  <meta name="keywords" content="SVG, Vector Graphics Generation, Text-Guided Generation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IconShop</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/avatar.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">IconShop: Text-Guided Vector Icon Synthesis with Autoregressive
+              Transformers</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Anonymous Authors</span>
+            </div>
+
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://github.com/IconShop/IconShop"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser. -->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div>
+          <img src="./static/images/teaser.png" alt="teaser" class="center">
+        </div>
+        <h2 class="subtitle has-text">
+          Vector icons generated with text prompts. The proposed IconShop supports vector icon synthesis from <u><b>keywords</b></u>
+          (left panel) and <u><b>natural phrases and sentences</b></u> (right panel).
+        </h2>
+
+      </div>
+    </div>
+  </section>
+      
+
+    </div>
+  </section>
+
+
+  <section class="hero is-small">
+
+  <section class="hero is-small">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br/>
+        <h2 class="title is-3">Random Generation</h2>
+      </div>
+    </div>
+  
+    <!-- discrete -->
+    <div class="hero-body" style="padding-top: unset">
+      <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random1.png" alt="cars peace" style="width: 90%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random2.png" alt="cars peace" style="width: 90%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random3.png" alt="cars peace" style="width: 90%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random4.png" alt="cars peace" style="width: 90%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random5.png" alt="cars peace" style="width: 90%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random6.png" alt="cars peace" style="width: 90%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <br/>
+        <h2 class="title is-3">Text-Guided Generation</h2>
+      </div>
+    </div>
+
+    <!-- discrete -->
+    <div class="hero-body" style="padding-top: unset">
+      <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete1.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete2.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete3.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete4.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete5.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete6.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete7.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete8.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete9.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete10.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete11.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete12.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete13.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete14.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/discrete15.png" alt="cars peace" style="width: 95%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-body" style="padding-top: unset">
+      <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp1.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp2.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp3.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp4.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp5.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp6.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp7.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp8.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp9.png" alt="cars peace" style="width: 95%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp10.png" alt="cars peace" style="width: 90%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp11.png" alt="cars peace" style="width: 85%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp12.png" alt="cars peace" style="width: 85%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp13.png" alt="cars peace" style="width: 85%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp14.png" alt="cars peace" style="width: 85%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/nlp15.png" alt="cars peace" style="width: 85%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+  
+      <div class="container is-max-desktop">
+  
+        <h2 class="title has-text-centered">Icon Editing</h2>
+      </div>
+    </div>
+
+    <div class="hero-body" style="padding-top: unset">
+      <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing1.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing2.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing3.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing4.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing5.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing6.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing7.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/random_editing8.png" alt="cars peace" style="width: 60%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-body" style="padding-top: unset">
+      <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing1.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing2.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing3.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing4.png" alt="cars peace" style="width: 65%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing5.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing6.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing7.png" alt="cars peace" style="width: 60%;" />
+          </div>
+          <div class="column is-centered has-text-centered">
+            <img src="./static/images/text_editing8.png" alt="cars peace" style="width: 60%;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-body" style="padding-top: unset">
+      <div class="container is-max-desktop">
+        <div class="item" style="margin: 0px; overflow: auto; border:0px; text-align: center;">
+          <video poster="" controls playsinline height="80%" width="80%">
+            <source src="./static/videos/text_editing.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-full-width">
+      <br/>
+      <h2 class="title is-3">Semantic Combination of Icons</h2>
+    </div>
+  </div>
+
+  <div class="hero-body" style="padding-top: unset">
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/combination1.png" alt="cars peace" style="width: 50%;" />
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/combination2.png" alt="cars peace" style="width: 50%;" />
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/combination3.png" alt="cars peace" style="width: 50%;" />
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/combination4.png" alt="cars peace" style="width: 50%;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-full-width">
+      <br/>
+      <h2 class="title is-3">Icon Interpolation</h2>
+    </div>
+  </div>
+
+  <div class="hero-body" style="padding-top: unset">
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/interpolation1.jpg" alt="cars peace" style="width: 60%;" />
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/interpolation2.jpg" alt="cars peace" style="width: 60%;" />
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/interpolation3.jpg" alt="cars peace" style="width: 60%;" />
+        </div>
+        <div class="column is-centered has-text-centered">
+          <img src="./static/images/interpolation4.jpg" alt="cars peace" style="width: 60%;" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-full-width">
+      <br/>
+      <h2 class="title is-3">Auto-Suggestion (Voice-over)</h2>
+    </div>
+  </div>
+
+  <div class="hero-body" style="padding-top: unset">
+    <div class="container is-max-desktop">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item" style="margin: 30px; overflow: auto; border:0px; text-align: center;">
+          <video poster="" controls playsinline height="80%" width="80%">
+            <source src="./static/videos/auto_suggestion1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item" style="margin: 30px; overflow: auto; border:0px; text-align: center;">
+          <video poster="" controls playsinline height="80%" width="80%">
+            <source src="./static/videos/auto_suggestion2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item" style="margin: 30px; overflow: auto; border:0px; text-align: center;">
+          <video poster="" controls playsinline height="80%" width="80%">
+            <source src="./static/videos/auto_suggestion3.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item" style="margin: 30px; overflow: auto; border:0px; text-align: center;">
+          <video poster="" controls playsinline height="80%" width="80%">
+            <source src="./static/videos/auto_suggestion4.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+  </section>
+
+</section> 
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+
+              The <a href="https://github.com/nerfies/nerfies.github.io">source code</a> for the website
+              was taken from Nerfies. We appreciate the authors sharing the templates with us.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
